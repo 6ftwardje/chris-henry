@@ -3,94 +3,31 @@
 import { motion } from "framer-motion"
 import { TestimonialCard } from "./TestimonialCard"
 
-const companyLogos = [
-  { name: "Manchester United", logo: "/logos/manchester-united.svg" },
-  { name: "Liverpool FC", logo: "/logos/liverpool.svg" },
-  { name: "BBC Sport", logo: "/logos/bbc-sport.svg" },
-  { name: "Sky Sports", logo: "/logos/sky-sports.svg" },
-  { name: "The Guardian", logo: "/logos/the-guardian.svg" },
-  { name: "Sports Illustrated", logo: "/logos/sports-illustrated.svg" }
-]
-
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    role: "Professional Tennis Player",
-    company: "WTA Tour",
-    content: "Chris's Neural Rewiring process completely transformed my mental game. I went from struggling with pressure situations to feeling completely calm and focused during crucial points. My ranking improved by 40 spots in just 6 months.",
-    image: "/testimonials/sarah-mitchell.jpg",
+    name: "Mark Selby",
+    role: "4x World Snooker Champion",
+    company: "Professional Snooker Association",
+    content: "Chris identified a problem I had and together we worked on the mental aspect. Now I'm mentally iron-strong again. I'm bursting with confidence. This is a new start for me.",
+    image: "/mark.png",
     rating: 5
   },
   {
-    name: "James Rodriguez",
-    role: "CEO",
-    company: "TechStart Inc.",
-    content: "As a CEO, I was constantly overwhelmed and making poor decisions under pressure. The Neural Rewiring process helped me develop laser focus and emotional regulation. Our company's performance has increased by 60% since implementing these techniques.",
-    image: "/testimonials/james-rodriguez.jpg",
-    rating: 5
-  },
-  {
-    name: "Emma Thompson",
-    role: "Olympic Swimmer",
-    company: "Team GB",
-    content: "I've worked with many sports psychologists, but Chris's approach is different. It's not just about mental techniques - it's about actually rewiring your brain for automatic excellence. The results speak for themselves.",
-    image: "/testimonials/emma-thompson.jpg",
-    rating: 5
-  },
-  {
-    name: "Michael Chen",
-    role: "Investment Banker",
-    company: "Goldman Sachs",
-    content: "The high-pressure environment of investment banking was taking its toll. Chris's Neural Rewiring process gave me the mental tools to stay calm and make better decisions, even during market volatility. Life-changing.",
-    image: "/testimonials/michael-chen.jpg",
+    name: "Shaun Murphy",
+    role: "World Snooker Champion",
+    company: "Professional Snooker Association", 
+    content: "Working with Chris has been transformative. His understanding of the mental game in snooker is unmatched. The techniques he teaches help you stay focused during those crucial moments.",
+    image: "/shaun.png",
     rating: 5
   }
 ]
 
 export function SocialProofSection() {
   return (
-    <section id="testimonials" className="py-20 bg-gray-50">
+    <section id="testimonials" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Company Logos */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Trusted by Top Professionals
-          </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {companyLogos.map((company, index) => (
-              <div key={index} className="flex items-center justify-center h-12 w-32">
-                <div className="text-gray-400 font-semibold text-sm">
-                  {company.name}
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
 
-        {/* Featured In */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mb-16"
-        >
-          <p className="text-gray-600 text-lg mb-4">As featured in:</p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            <div className="text-gray-500 font-medium">BBC Sport</div>
-            <div className="text-gray-500 font-medium">Sky Sports</div>
-            <div className="text-gray-500 font-medium">The Guardian</div>
-            <div className="text-gray-500 font-medium">Sports Illustrated</div>
-          </div>
-        </motion.div>
-
-        {/* Testimonials */}
+        {/* Testimonials Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -147,3 +84,5 @@ export function SocialProofSection() {
     </section>
   )
 }
+
+

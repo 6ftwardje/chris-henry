@@ -25,7 +25,7 @@ export function TestimonialCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
     >
       {/* Rating */}
       <div className="flex items-center mb-4">

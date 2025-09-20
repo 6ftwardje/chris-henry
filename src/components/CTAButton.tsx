@@ -20,7 +20,7 @@ export function CTAButton({
   const variantClasses = {
     primary: "bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105",
     secondary: "bg-gray-100 hover:bg-gray-200 text-gray-900 border border-gray-300",
-    outline: "border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+    outline: "border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white bg-white"
   }
 
   return (

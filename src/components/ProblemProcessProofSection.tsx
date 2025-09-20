@@ -28,14 +28,6 @@ const processSteps = [
   }
 ]
 
-const problems = [
-  "Mental blocks under pressure",
-  "Lack of focus and concentration", 
-  "Performance anxiety and stress",
-  "Inconsistent results despite preparation",
-  "Self-doubt and negative self-talk",
-  "Burnout and mental fatigue"
-]
 
 const proofPoints = [
   {
@@ -60,33 +52,6 @@ export function ProblemProcessProofSection() {
   return (
     <section id="process" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Problem Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
-        >
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Are You Struggling With These Performance Blocks?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {problems.map((problem, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex items-center p-4 bg-red-50 rounded-lg border border-red-200"
-              >
-                <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0" />
-                <span className="text-gray-700 font-medium">{problem}</span>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* Process Section */}
         <motion.div
@@ -122,7 +87,7 @@ export function ProblemProcessProofSection() {
                 </div>
 
                 {/* Card */}
-                <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 h-full">
+                <div className="bg-white rounded-xl shadow-lg p-8 h-full">
                   <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center mx-auto mb-6`}>
                     <step.icon className="w-8 h-8 text-white" />
                   </div>

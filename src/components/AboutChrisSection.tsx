@@ -51,6 +51,7 @@ const achievements = [
 ]
 
 export function AboutChrisSection() {
+
   return (
     <section id="about" className="pb-20 bg-white">
       <div className="max-w-full">

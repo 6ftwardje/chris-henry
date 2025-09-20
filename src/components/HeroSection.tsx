@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { CTAButton } from "./CTAButton"
 
 export function HeroSection() {
+
   return (
         <section className="relative min-h-screen overflow-hidden">
       {/* Hero Image Background */}
@@ -94,6 +95,7 @@ export function HeroSection() {
           </motion.div>
 
         </div>
+        
       </div>
     </section>
   )

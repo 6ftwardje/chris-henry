@@ -28,22 +28,21 @@ export function HeroSection() {
             transition={{ duration: 0.8 }}
             className="text-white space-y-6 max-w-2xl"
           >
-            {/* Logo */}
-            <div className="mb-4">
-              <img 
-                src="/logo.png" 
-                alt="Neural Rewiring" 
-                className="h-14 w-auto"
-              />
-            </div>
+                  {/* Logo */}
+                  <div className="mb-4">
+                    <img 
+                      src="/logo.png" 
+                      alt="Neural Rewiring" 
+                      className="w-[280px] sm:w-[350px] md:w-[420px] lg:w-[560px] xl:w-[700px] h-auto"
+                    />
+                  </div>
 
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-              <span className="block text-white">Neural Rewiring</span>
-              <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                for Peak Performance
-              </span>
-            </h1>
+                  {/* Main Headline */}
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                    <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                      for Peak Performance
+                    </span>
+                  </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 leading-relaxed">
@@ -77,13 +76,13 @@ export function HeroSection() {
               >
                 Discover the Process
               </CTAButton>
-              <CTAButton 
-                variant="outline" 
-                size="lg"
-                className="text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-black w-full sm:w-auto"
-              >
-                Contact Chris
-              </CTAButton>
+                  <CTAButton 
+                    variant="outline" 
+                    size="lg"
+                    className="text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-black bg-white hover:bg-gray-100 hover:text-black w-full sm:w-auto"
+                  >
+                    Contact Chris
+                  </CTAButton>
             </div>
 
             {/* Trust Indicator */}
